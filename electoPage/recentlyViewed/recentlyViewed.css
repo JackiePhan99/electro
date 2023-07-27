@@ -1,0 +1,98 @@
+/*.recently-viewed{*/
+/*    padding: 0 15px;*/
+/*}*/
+
+.recently-viewed-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 8px;
+    border-bottom: 1px #dedddd solid;
+}
+
+.recently-viewed-title {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.recently-viewed-title:after {
+    content: '';
+    border-bottom: 1.5px solid gold;
+    display: block;
+    position: absolute;
+    width: 120px;
+    transform: translateY(-50%);
+    padding-top: 30px;
+}
+
+.recently-viewed-cards {
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    justify-content: center;
+}
+
+.line:after {
+    content: '';
+    border-right: 2px solid #eaeaea;
+    display: block;
+    position: absolute;
+    top: 45%;
+    height: 75%;
+    transform: translateY(-50%);
+}
+
+
+
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.dots {
+    display: flex;
+    margin: 0 10px;
+}
+
+.doti {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.doti.active {
+    width: 30px;
+    background-color: gold;
+    border-radius: 20%/50%;
+    transform: none;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.prev-btn,
+.next-btn {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .slido {
+        flex: 0 0 calc(100% / 2); /* Показывать 4 карточки на экране */
+        text-align: center;
+    }
+}

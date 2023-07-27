@@ -1,0 +1,42 @@
+col-5 {
+    display: flex;
+    justify-content: start;
+}
+
+.recommend-card-img {
+    width: 100%;
+    z-index: -1;
+}
+
+.recommend-card-title {
+    padding: 0 15px;
+    height: 100px;
+}
+
+.recommend-card-item:hover {
+    color: #000;
+}
+
+.recommend-card-text {
+    font-size: 18px;
+    padding-bottom: 12px;
+    letter-spacing: -.4px;
+    line-height: 1.438rem;
+}
+
+.recommend-card-btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.recommend-card-btn i {
+    font-size: 16px;
+    transition: ease-in-out, 0.2s;
+    color: gold;
+}
+
+.recommend-card-btn:hover i{
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+

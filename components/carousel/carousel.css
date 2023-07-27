@@ -1,0 +1,16 @@
+.info-text-item {
+    display: flex;
+    text-align: start;
+    align-items: start;
+    flex-direction: column;
+    max-width: 446px;
+    height: 364px;
+}
+
+.buying-btn {
+    letter-spacing: -.4px;
+    background-color: gold;
+    border: none;
+    border-radius: 5px ;
+    padding: 10px 50px;
+}

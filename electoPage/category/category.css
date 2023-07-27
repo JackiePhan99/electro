@@ -1,0 +1,118 @@
+.product-buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.product-price {
+    font-size: 20px;
+}
+
+.mini-img-item1, .mini-img-item2, .mini-img-item3 {
+    border: 1px #e1e1e1 solid;
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-img-item1:hover .mini-image-loop {
+    visibility: visible;
+    transition: ease-in-out, 0.2s;
+}
+
+.mini-img-item2:hover .mini-image-loop {
+    visibility: visible;
+    transition: ease-in-out, 0.2s;
+}
+
+.mini-img-item3:hover .mini-image-loop {
+    visibility: visible;
+    transition: ease-in-out, 0.2s;
+}
+
+.mini-img-item1 {
+    background-image: url("../../images/category_img1.jpg");
+}
+
+.mini-img-item2 {
+    background-image: url("../../images/category_img2.jpg");
+}
+
+.mini-img-item3 {
+    background-image: url("../../images/category_img3.jpg");
+}
+
+.mini-image-loop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: gold;
+    color: #fff;
+    visibility: hidden;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+}
+
+
+
+.consoles-type {
+    margin-top: 3px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.consoles-name {
+    font-size: 14px;
+    color: #0a53be;
+    font-weight: bold;
+}
+
+.consoles-img {
+    max-height: 550px;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.consoles-img img {
+    max-width: 100%;
+}
+
+.consoles-mini-img {
+    display: flex;
+    margin-top: 12px;
+}
+
+.consoles-add-to-cart {
+    background-color: gold;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 20px;
+    color: #fff;
+    transition: ease-in-out, 0.5s;
+}
+
+.consoles-add-to-cart:hover {
+    -webkit-box-shadow: 0px 7px 15px 0px rgba(217, 255, 0, 0.57);
+    -moz-box-shadow: 0px 7px 15px 0px rgba(217, 255, 0, 0.57);
+    box-shadow: 0px 7px 15px 0px rgba(217, 255, 0, 0.57);
+    transform: translate(0px, -5px);
+}
+
+.card-hidden-items {
+    flex-shrink: 0;
+}
+
+.consoles-card:hover .card-hidden-items {
+    visibility: visible;
+}

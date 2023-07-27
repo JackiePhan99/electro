@@ -1,0 +1,105 @@
+.mini-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mini-carousel-content {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 15px;
+    height: 76px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px lightgrey solid;
+    border-bottom: 1px lightgrey solid;
+}
+
+.mini-carousel-item a img{
+    height: 50px;
+    max-width: 166px;
+    opacity: 0.5;
+    transition: ease-in-out, 0.1s;
+}
+
+.mini-carousel-item a img:hover {
+    opacity: 1;
+}
+
+
+.mini-carousel-content {
+    width: 100%;
+    position: relative;
+}
+.mini-carousel-content .mini {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    transform: translateY(-50%);
+}
+.mini-carousel-content .mini:active{
+    transform: translateY(-50%) scale(0.85);
+}
+.mini-carousel-content .mini:first-child{
+    left: -22px;
+}
+.mini-carousel-content .mini:last-child{
+    right: -22px;
+}
+.mini-carousel-content .carousels{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 5) + 5px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin: 0;
+}
+.carousels::-webkit-scrollbar {
+    display: none;
+}
+.carousels.no-transition {
+    scroll-behavior: auto;
+}
+.carousels.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.carousels.dragging .cardo {
+    cursor: grab;
+    user-select: none;
+}
+.carousels :where(.cardo, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousels .cardo {
+    scroll-snap-align: start;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .mini-carousel-content .carousels {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .mini-carousel-content .carousels {
+        grid-auto-columns: 100%;
+    }
+}
