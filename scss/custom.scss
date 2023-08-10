@@ -518,7 +518,7 @@ body {
       }
 
       .consoles-card {
-        padding: 3px;
+        padding: 0 1px;
 
         .consoles-card-container {
           .consoles-card-content {
@@ -782,6 +782,9 @@ body {
       }
     }
   }
+  .bestseller-card-left-block img {
+    width: 95px;
+  }
 }
 
 @media(min-width: 992px) {
@@ -823,6 +826,9 @@ body {
       min-width: 370px;
       max-height: 738px;
     }
+  }
+  .bestseller-card-left-block img {
+    width: 150px;
   }
 }
 
@@ -977,7 +983,7 @@ body {
   }
   .consoles-card {
     .consoles-card-content {
-      max-height: 662px;
+      max-height: 666px;
     }
   }
 

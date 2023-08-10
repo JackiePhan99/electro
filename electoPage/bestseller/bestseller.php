@@ -1,5 +1,4 @@
 <?php
-
 $hostname = 'localhost';
 $username = 'electro';
 $password = 'electro';
@@ -21,7 +20,12 @@ $bestResult = mysqli_query($connection, $bestQuery);
 // Fetch and display the data
 if (mysqli_num_rows($bestResult) > 0) {
     while ($row = mysqli_fetch_assoc($bestResult)) {
-        echo '<div class="col-xl-3 col-md-4 bestseller-card">' .
+        $divClass = 'col-xl-3 col-md-4 bestseller-card';
+        if ($row['id'] == 15 || $row['id'] == 16) {
+            $divClass = 'col-xl-3 col-md-4 d-xl-block d-sm-none bestseller-card';
+        }
+
+        echo '<div class="' . $divClass . '">' .
                 '<div class="bestseller-card-items">' .
                     '<div class="bestseller-card-item">' .
                         '<div class="bestseller-card-left-block">' .
@@ -32,12 +36,12 @@ if (mysqli_num_rows($bestResult) > 0) {
                         '<div class="bestseller-card-right-block">' .
                             '<div class="bestseller-card-title">' .
                                 '<div class="bestseller-type">' .
-                                    ' <a>' .
+                                    '<a>' .
                                         $row['type'] .
-                                    ' </a>' .
+                                    '</a>' .
                                 '</div>' .
                                 '<h5 class="bestseller-name">' .
-                                    ' <a>' .
+                                    '<a>' .
                                         $row['name'] .
                                     '</a>' .
                                 '</h5>' .
@@ -67,9 +71,4 @@ if (mysqli_num_rows($bestResult) > 0) {
 
 // Close the connection
 mysqli_close($connection);
-
-
-
-
-
 

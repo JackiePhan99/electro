@@ -99,11 +99,7 @@
 }
 
 .bestseller-card-left-block img {
-    width: 100%;
-}
-
-.bestseller-card-left-block img:hover {
-    max-width: 150px;
+    width: 150px;
 }
 
 .bestseller-card-right-block {
