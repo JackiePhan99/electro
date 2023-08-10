@@ -73,7 +73,6 @@
                         </path>
                     </svg>
                 </a>
-<!--                <button class="nav_btn"></button>-->
                 <div class="header_in">
                     <button type="button" class="toggle" id="toggle">
                         <i class="fa-solid fa-bars"></i>
@@ -88,7 +87,7 @@
                     All categories<span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <button type="button" class="btn btn-outline-secondary search-btn"><i
-                        class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                            class="fa-solid fa-magnifying-glass fa-lg"></i></button>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">All categories</a></li>
                     <li><a class="dropdown-item" href="#">one</a></li>
@@ -139,18 +138,9 @@
                         All Departments
                     </button>
                     <ul class="dropdown-menu main-dropdown" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Value of the Day</a></li>
-                        <li><a class="dropdown-item" href="#">Top 100 Offers</a></li>
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                        <li><a class="dropdown-item" href="#">Value of the Day</a></li>
-                        <li><a class="dropdown-item" href="#">Top 100 Offers</a></li>
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                        <li><a class="dropdown-item" href="#">Value of the Day</a></li>
-                        <li><a class="dropdown-item" href="#">Top 100 Offers</a></li>
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                        <li><a class="dropdown-item" href="#">Value of the Day</a></li>
-                        <li><a class="dropdown-item" href="#">Top 100 Offers</a></li>
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        <?php
+                        include 'getNavData/getCategory.php';
+                        ?>
                     </ul>
                 </div>
                 <div class="dropdown_right">
@@ -158,11 +148,13 @@
                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Super Deals
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="row dropdown-items">
+                            <?php
+                            include 'getNavData/getNavigation.php';
+                            ?>
+                        </div>
+                    </div>
                 </div>
                 <div class="nav-links">
                     <a class="nav_link" href="/">Featured Brands</a>
@@ -177,9 +169,12 @@
     </div>
     <div class="sidebar" id='sidebar'>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <?php
+            include 'getNavData/getCategory.php';
+            ?>
+            <!--            <li><a href="">Home</a></li>-->
+            <!--            <li><a href="">About</a></li>-->
+            <!--            <li><a href="">Contact</a></li>-->
         </ul>
     </div>
     <script src="../js/header.js"></script>

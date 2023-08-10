@@ -169,15 +169,19 @@
     font-weight: bold;
 }
 
-.page-navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+/*.page-navigation ul {*/
+/*    padding: 0;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
 
-.page-navigation ul li {
+.page-navigation li {
+    list-style-type: none;
     font-size: 14px;
-    margin: 10px 0;
+    margin: 5px 0;
+    padding: 0;
+
 }
 
 .footer-bottom {

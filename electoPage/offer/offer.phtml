@@ -1,0 +1,123 @@
+<div class="wrapper">
+    <div class="featured-product-list row">
+        <div class="special-offer-container col-md-auto">
+            <div class="special-offer">
+                <h3 class="special-offer-text">Special Offer</h3>
+                <div class="special-offer-sticker">
+                    <span class="font-size-12">Save</span>
+                    <div class="font-size-20">$120</div>
+                </div>
+            </div>
+            <div class="special-offer-img">
+                <a class="special-offer-link">
+                    <img src="../images/special-offer.jpg">
+                </a>
+            </div>
+            <h5 class="font-size-14">
+                <a class="special-offer-link">
+                    <div class="special-offer-link-text">
+                        Game Console Controller + USB 3.0 Cable
+                    </div>
+                </a>
+            </h5>
+            <div class="special-offer-price">
+                <del class="special-offer-price-del">$99.00</del>
+                <ins class="special-offer-price-ins">$79.00</ins>
+            </div>
+            <div class="special-offer-quantity">
+            <span>
+                Available:
+                <strong>6</strong>
+            </span>
+                <span>
+                Already Sold:
+                <strong>28</strong>
+            </span>
+            </div>
+            <div class="special-offer-sold-line">
+                <div class="special-offer-available-line">
+                </div>
+            </div>
+            <div class="special-offer-end-time">
+                <h6>Hurry Up! Offer ends in:</h6>
+                <div class="special-offer-time">
+                    <div class="special-offer-hours">
+                        <div class="special-offer-time-box">
+                            00
+                        </div>
+                        <div class="special-offer-time-text">HOURS</div>
+                    </div>
+                    <div class="special-offer-time-mark">:</div>
+                    <div class="special-offer-minute">
+                        <div class="special-offer-time-box">
+                            00
+                        </div>
+                        <div class="special-offer-time-text">MINS</div>
+                    </div>
+                    <div class="special-offer-time-mark">:</div>
+                    <div class="special-offer-second">
+                        <div class="special-offer-time-box">
+                            00
+                        </div>
+                        <div class="special-offer-time-text">SECS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-container col">
+            <div class="featured-onsale-top-list">
+                <div class="tab-wrapper">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-item-link active" id="tab" data-bs-toggle="tab" data-bs-target="#pills1"
+                               type="button" role="tab" aria-controls="home" aria-selected="true">
+                                <div class="nav-link">Featured
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-item-link" id="tab" data-bs-toggle="tab" data-bs-target="#pills2"
+                               type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                <div class="nav-link">On Sale
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-item-link" id="tab" data-bs-toggle="tab" data-bs-target="#pills3"
+                               type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                <div class="nav-link">Top Rated
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active content-block" id="pills1">
+                        <ul class="card-content row row-cols-4">
+                            <?php
+                            include 'offer.php';
+                            ?>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane content-block" id="pills2">
+                        <ul class="card-content row row-cols-4">
+                            <?php
+                            include 'offer.php';
+                            ?>
+                        </ul>
+                    </div>
+                    <div class="tab-pane content-block" id="pills3">
+                        <ul class="card-content row row-cols-4">
+                            <?php
+                            include 'offer.php';
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
