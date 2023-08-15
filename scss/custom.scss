@@ -8,14 +8,8 @@
 }
 
 body {
-  margin: 0;
   //font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #333e48;
   text-align: left;
-  background-color: #fff;
 }
 
 .wrapper {
@@ -148,10 +142,9 @@ body {
 
       .dropdown-menu {
         border-radius: 0 0 10px 10px;
-        border: none;
         width: 1100px;
         .dropdown-items {
-          max-height: 500px;
+          max-height: 540px;
           flex-direction: column;
           display: flex;
           flex-wrap: wrap;

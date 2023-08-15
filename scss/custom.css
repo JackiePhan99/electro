@@ -11866,13 +11866,7 @@ textarea.form-control-lg {
 }
 
 body {
-  margin: 0;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #333e48;
   text-align: left;
-  background-color: #fff;
 }
 
 .wrapper {
@@ -11985,11 +11979,10 @@ body {
 }
 .header_navbar .nav_items .dropdown_right .dropdown-menu {
   border-radius: 0 0 10px 10px;
-  border: none;
   width: 1100px;
 }
 .header_navbar .nav_items .dropdown_right .dropdown-menu .dropdown-items {
-  max-height: 500px;
+  max-height: 540px;
   flex-direction: column;
   display: flex;
   flex-wrap: wrap;
